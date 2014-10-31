@@ -36,6 +36,19 @@ To show your alerts, use:
     flash[:notice] = "YOUR MESSAGE"
     flash[:success] = "YOUR MESSAGE"
 
+## Example
+
+    class HomeController < ApplicationController
+      def index
+          flash[:error] = "YOUR MESSAGE"  
+      end
+    end
+
+## Demo
+
+[https://alert-message.herokuapp.com/](https://alert-message.herokuapp.com/)
+
+
 ## Contributing
 
 **Welcome to contribute**
