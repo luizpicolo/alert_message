@@ -3,9 +3,9 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 # Maintain your gem's version:
-require 'version'
+require 'version/version'
 
-Gem::sification.new do |s|
+Gem::Specification.new do |s|
   s.name          = "alert_message"
   s.version       = AlertMessage::Version::VERSION
   s.authors       = ["Luiz Picolo"]
