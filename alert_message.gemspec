@@ -2,21 +2,24 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-Gem::Specification.new do |spec|
-  spec.name          = "alert_message"
-  spec.version       = "1.0"
-  spec.authors       = ["Luiz Picolo"]
-  spec.email         = ["luizpicolo@gmail.com"]
-  spec.summary       = "Alert Message"
-  spec.description   = "Simple gem for alerts messages"
-  spec.homepage      = "https://github.com/luizpicolo/alert_message"
-  spec.license       = "MIT"
+# Maintain your gem's version:
+require 'version'
 
-  spec.files         = `git ls-files -z`.split("\x0")
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+Gem::sification.new do |s|
+  s.name          = "alert_message"
+  s.version       = AlertMessage::Version::VERSION
+  s.authors       = ["Luiz Picolo"]
+  s.email         = ["luizpicolo@gmail.com"]
+  s.summary       = "Alert Message"
+  s.description   = "Simple gem for alerts messages"
+  s.homepage      = "https://github.com/luizpicolo/alert_message"
+  s.license       = "MIT"
 
-  spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  s.files         = `git ls-files -z`.split("\x0")
+  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.test_files    = s.files.grep(%r{^(test|s|features)/})
+  s.require_paths = ["lib"]
+
+  s.add_development_dependency "bundler", "~> 1.6"
+  s.add_development_dependency "rake"
 end
