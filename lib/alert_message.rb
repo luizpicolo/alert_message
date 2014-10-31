@@ -1,3 +1,5 @@
+require "alert_message/engine"
+
 module AlertMessage
-  # Your code goes here...
+  # Yor code goes here...
 end
