@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "alert_message"
-  spec.version       = "0.0.8"
+  spec.version       = "1.0"
   spec.authors       = ["Luiz Picolo"]
   spec.email         = ["luizpicolo@gmail.com"]
   spec.summary       = "Alert Message"
-  spec.description   = "Alert Message"
-  spec.homepage      = "http://www.luizpicolo.com.br"
+  spec.description   = "Simple gem for alerts messages"
+  spec.homepage      = "https://github.com/luizpicolo/alert_message"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
