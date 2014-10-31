@@ -16,9 +16,17 @@ Run install script:
 
     $ rails g alert_message:install
 
+Rename *app/assets/application.css* to *app/assets/application.css.scss* and add in app/assets/application.css.scss
+
+    *= require alert_message
+
+and in app/assets/application.js
+
+    //= require alert_message
+
 ## How to use
 
-Add to *application.html.erb*
+Add in *application.html.erb*
 
     <%= render "layouts/alerts" %>
 
