@@ -1,0 +1,3 @@
+module AlertMessage
+  # Your code goes here...
+end

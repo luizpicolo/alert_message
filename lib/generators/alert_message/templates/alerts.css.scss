@@ -1,0 +1,57 @@
+// alert
+$text-1: #FFFFFF;   // branco
+$alert-success: #27ae60;  // verde
+$alert-danger: #e74c3c;   // vermelho
+$alert-notice: #2980b9;   // azul
+
+// box sizing
+@mixin box-sizing($boxmodel){
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+.alert {
+  cursor: pointer;
+  @include box-sizing(border-box);
+
+  position: absolute;
+
+  width: 100%;
+
+  color: $text-1;
+  font-size: 1.4em;
+  text-align: center;
+
+  padding: 10px;
+
+  .close {
+    outline: none;
+    @include box-sizing(border-box);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+
+    font-size: 1.4em;
+
+    border: 0;
+    background: none;
+  }
+}
+
+.alert-success {
+  background: $alert-success;
+}
+
+.alert-danger {
+  background: $alert-danger;
+}
+
+.alert-notice {
+  background: $alert-success;
+}
