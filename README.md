@@ -1,5 +1,7 @@
 # Alert Message
 
+[![Gem Version](https://badge.fury.io/rb/alert_message.svg)](http://badge.fury.io/rb/alert_message)
+
 This is a simple gem for alerts messages.
 
 ## Installation
