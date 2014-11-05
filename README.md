@@ -1,4 +1,4 @@
-# Alert Message
+# [Alert Message](http://rubygems.org/gems/alert_message)
 
 [![Gem Version](https://badge.fury.io/rb/alert_message.svg)](http://badge.fury.io/rb/alert_message)
 
