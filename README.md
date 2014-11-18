@@ -61,7 +61,6 @@ To show your alerts, use:
 4. Push to the branch (git push origin my-new-feature)
 5. Create new Pull Request
 
-
 ## License
 
 MIT License. Copyright 2014 Luiz Picolo. http://www.luizpicolo.com.br
