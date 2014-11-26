@@ -15,7 +15,10 @@ $alert-notice: #2980b9;   // azul
   cursor: pointer;
   @include box-sizing(border-box);
 
-  position: absolute;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
 
   width: 100%;
 
