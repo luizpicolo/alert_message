@@ -46,6 +46,30 @@ To show your alerts, use:
       end
     end
 
+## Custom message to Devise
+
+Some devise screens do not accept Flash Messages. For this we will use a custom helper.
+
+Add in your app/views/layouts/_alerts.html.erb
+
+    <%= show_messages %>
+
+Create helper alert_message_helper.rb
+
+    module AlertMessageHelper
+      def show_messages
+        return "" if resource.errors.empty?
+        messages = resource.errors.full_messages
+        html = <<-HTML
+          <div class="alert alert-danger">
+          <button type="button" class="close">&times;</button>
+            #{messages.first}
+          </div>
+        HTML
+        html.html_safe
+      end
+    end
+
 ## Demo
 
 [https://alert-message.herokuapp.com/](https://alert-message.herokuapp.com/)
