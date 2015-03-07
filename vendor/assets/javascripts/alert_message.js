@@ -1,7 +1,7 @@
 // alerts
 
 $(document).ready(function(){
-  var alerts = $('.alert');
+  var alerts = $('.alert-message');
 
   setTimeout(function(){
     alerts.fadeOut(400);

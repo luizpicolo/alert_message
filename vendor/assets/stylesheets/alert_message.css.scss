@@ -11,7 +11,7 @@ $alert-notice: #2980b9;   // azul
           box-sizing: $boxmodel;
 }
 
-.alert {
+.alert-message {
   cursor: pointer;
   @include box-sizing(border-box);
 
@@ -23,7 +23,7 @@ $alert-notice: #2980b9;   // azul
   width: 100%;
 
   color: $text-1;
-  font-size: 1.4em;
+  font-size: 1.4em !important;
   text-align: center;
 
   padding: 10px;
@@ -47,14 +47,14 @@ $alert-notice: #2980b9;   // azul
   }
 }
 
-.alert-success {
+.alert-message-success {
   background: $alert-success;
 }
 
-.alert-danger {
+.alert-message-danger {
   background: $alert-danger;
 }
 
-.alert-notice {
+.alert-message-notice {
   background: $alert-success;
 }
