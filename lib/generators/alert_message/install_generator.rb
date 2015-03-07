@@ -3,6 +3,7 @@ module AlertMessage
     source_root File.expand_path('../templates', __FILE__)
 
     def copy_gfiles_alert
+      remove_file "app/views/layouts/_alerts.html.erb"
       copy_file "_alerts.html.erb", "app/views/layouts/_alerts.html.erb"
     end
   end
