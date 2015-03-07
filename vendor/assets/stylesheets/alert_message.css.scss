@@ -26,14 +26,14 @@ $alert-notice: #2980b9;   // azul
   font-size: 1.4em !important;
   text-align: center;
 
-  padding: 10px;
+  padding: 10px 0 15px;
 
   .close {
     outline: none;
     @include box-sizing(border-box);
 
     position: absolute;
-    top: 0;
+    top: -3px;
     right: 0;
 
     width: 42px;
