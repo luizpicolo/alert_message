@@ -26,7 +26,7 @@ $alert-notice: #2980b9;   // azul
   font-size: 16px !important;
   text-align: center;
 
-  padding: 10px 0 10px;
+  padding: 10px 0 13px;
 
   .close {
     outline: none;
@@ -34,7 +34,7 @@ $alert-notice: #2980b9;   // azul
 
     position: absolute;
     right: 0;
-    top: 0;
+    top: -3px;
 
     width: 42px;
     height: 42px;
