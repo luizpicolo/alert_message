@@ -8,7 +8,9 @@ This is a simple gem for [alerts messages](http://rubygems.org/gems/alert_messag
 
 Add to your Gemfile:
 
-    gem 'alert_message'
+```ruby
+gem 'alert_message'
+```
 
 Then run:
 
@@ -35,17 +37,21 @@ Add in app/views/layouts/application.html.erb
 
 To show your alerts, use:
 
-    flash[:error] = "YOUR MESSAGE"
-    flash[:notice] = "YOUR MESSAGE"
-    flash[:success] = "YOUR MESSAGE"
+```ruby
+flash[:error] = "YOUR MESSAGE"
+flash[:notice] = "YOUR MESSAGE"
+flash[:success] = "YOUR MESSAGE"
+```
 
 #### Example
 
-    class HomeController < ApplicationController
-      def index
-          flash[:error] = "YOUR MESSAGE"  
-      end
-    end
+```ruby
+class HomeController < ApplicationController
+  def index
+    flash[:error] = "YOUR MESSAGE"  
+  end
+end
+```
 
 ## Custom message to Devise
 
@@ -57,18 +63,20 @@ Add in your app/views/layouts/_alerts.html.erb
 
 Create helper alert_message_helper.rb
 
-    module AlertMessageHelper
-      def show_messages
-        return "" if resource.errors.empty?
-        messages = resource.errors.full_messages
-        html = <<-HTML
-          <div class="alert alert-danger">
-            #{messages.first}
-          </div>
-        HTML
-        html.html_safe
-      end
-    end
+```ruby
+module AlertMessageHelper
+  def show_messages
+    return "" if resource.errors.empty?
+    messages = resource.errors.full_messages
+      html = <<-HTML
+        <div class="alert alert-danger">
+          #{messages.first}
+        </div>
+      HTML
+      html.html_safe
+  end
+end
+```    
 
 ## Demo
 
