@@ -1,13 +1,13 @@
 // alerts
 
-$(document).ready(function(){
+$(function(){
   var alerts = $('.alert-message');
 
-  setTimeout(function(){
+  setTimeout(function() {
     alerts.fadeOut(400);
-  }, 3000);
+  }, 4000);
 
-  alerts.on('click', function(){
-      alerts.fadeOut(400);
+  alerts.click(function() {
+    alerts.fadeOut(400);
   });
 })
