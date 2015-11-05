@@ -1,0 +1,25 @@
+.alert-message {
+  cursor: pointer;
+
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+
+  padding: 10px;
+}
+
+.alert-message-danger {
+  background: #e74c3c;
+}
+
+.alert-message-notice,
+.alert-message-success {
+  background: #27ae60;
+}
