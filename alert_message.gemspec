@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.name          = "alert_message"
   s.version       = AlertMessage::Version::VERSION
   s.authors       = ["Luiz Picolo", "Gabriel Medina"]
-  s.email         = ["luizpicolo@gmail.com"]
+  s.email         = ["luizpicolo@gmail.com", "gmedina.santos@gmail.com"]
   s.summary       = "Alert Message"
   s.description   = "Simple gem for alerts messages"
   s.homepage      = "https://github.com/luizpicolo/alert_message"
