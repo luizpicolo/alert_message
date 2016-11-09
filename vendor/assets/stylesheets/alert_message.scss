@@ -4,22 +4,43 @@
   position: fixed;
   z-index: 9999;
   top: 0;
-  left: 0;
+  right: 0;
 
+  box-sizing: border-box;
   width: 100%;
+  padding: 10px;
+  background-color: #444;
 
-  color: #fff;
-  font-size: 1em;
+  color: #ffffff;
+  font-size: 13px;
   text-align: center;
 
-  padding: 10px;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.alert-message--visible {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .alert-message-error {
-  background: #e74c3c;
+  background-color: #D33D3D;
 }
 
 .alert-message-notice,
 .alert-message-success {
-  background: #27ae60;
+  background-color: #67AF72;
+}
+
+@media screen and (min-width: 768px) {
+  .alert-message {
+    font-size: 15px;
+  }
 }

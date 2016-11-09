@@ -1,10 +1,13 @@
 $ ->
   alerts = $('.alert-message')
+  alerts.addClass('alert-message--visible')
+
   setTimeout (->
-    alerts.fadeOut 400
+    alerts.removeClass('alert-message--visible')
     return
-  ), 4000
+  ), 10000
+
   alerts.click ->
-    alerts.fadeOut 400
+    alerts.removeClass('alert-message--visible')
     return
   return
