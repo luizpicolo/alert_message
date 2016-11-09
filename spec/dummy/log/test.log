@@ -7042,3 +7042,31 @@ Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home?message=error" for 127.0.0.1 at 2016-11-09 16:58:45 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"message"=>"error"}
+  Rendered layouts/_alerts.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 103ms (Views: 97.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home?message=notice" for 127.0.0.1 at 2016-11-09 16:58:45 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"message"=>"notice"}
+  Rendered layouts/_alerts.html.erb (0.0ms)
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home?message=success" for 127.0.0.1 at 2016-11-09 16:58:45 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"message"=>"success"}
+  Rendered layouts/_alerts.html.erb (0.0ms)
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
