@@ -1,7 +1,7 @@
 <% flash.each do |key, value| %>
 	<%
-		if key != 'success' && key != 'danger' && key != 'notice'
-			key = 'danger'
+		if key != 'success' && key != 'error' && key != 'notice'
+			key = 'error'
 		end
 	%>
     <div class="alert-message alert-message-<%= key %>">
