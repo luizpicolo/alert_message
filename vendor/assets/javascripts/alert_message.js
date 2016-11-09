@@ -2,12 +2,13 @@
 
 $(function(){
   var alerts = $('.alert-message');
+  alerts.addClass('alert-message--visible');
 
   setTimeout(function() {
-    alerts.fadeOut(400);
-  }, 4000);
+    alerts.removeClass('alert-message--visible');
+  }, 10000);
 
   alerts.click(function() {
-    alerts.fadeOut(400);
+    alerts.removeClass('alert-message--visible');
   });
 })
