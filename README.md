@@ -1,6 +1,7 @@
 # Alert Message
 
 [![Gem Version](https://badge.fury.io/rb/alert_message.svg)](http://badge.fury.io/rb/alert_message)
+[![Build Status](https://travis-ci.org/luizpicolo/alert_message.svg?branch=master)](https://travis-ci.org/luizpicolo/alert_message)
 
 This is a simple gem for [alerts messages](http://rubygems.org/gems/alert_message).
 
@@ -22,18 +23,23 @@ Run install script:
 
 Add styles in app/assets/application.css
 
-    *= require alert_message
+```ruby
+*= require alert_message
+```
 
 Add scripts in app/assets/application.js
 
-    //= require alert_message
-
+```ruby
+//= require alert_message
+```
 
 ## How to use
 
 Add in app/views/layouts/application.html.erb
 
-    <%= render "layouts/alerts" %>
+```ruby
+<%= render "layouts/alerts" %>
+```
 
 To show your alerts, use:
 
@@ -82,6 +88,11 @@ end
 
 [alert-message.herokuapp.com](https://alert-message.herokuapp.com/)
 
+# Run testes
+
+```
+bundle exec rake
+```
 
 ## Contributing
 
