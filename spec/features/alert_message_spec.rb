@@ -2,7 +2,7 @@ require 'spec_helper'
 
 feature 'show message', type: :feature do
 
-  selectors = %w(error notice success)
+  selectors = %w(error danger notice success)
 
   selectors.each do |selector|
     scenario selector, js: false do
