@@ -3,13 +3,14 @@
 [![Gem Version](https://badge.fury.io/rb/alert_message.svg)](http://badge.fury.io/rb/alert_message)
 [![Build Status](https://travis-ci.org/luizpicolo/alert_message.svg?branch=master)](https://travis-ci.org/luizpicolo/alert_message)
 
-This is a simple gem for [alerts messages](http://rubygems.org/gems/alert_message).
+This is a simple gem for [alerts messages](http://rubygems.org/gems/alert_message). Work rails > 4
 
 ## Installation
 
 Add to your Gemfile:
 
 ```ruby
+gem 'jquery-rails' # Need for rails > 5
 gem 'alert_message'
 ```
 
@@ -30,6 +31,7 @@ Add styles in app/assets/application.css
 Add scripts in app/assets/application.js
 
 ```ruby
+//= require jquery
 //= require alert_message
 ```
 
