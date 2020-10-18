@@ -16,15 +16,15 @@ Gem::Specification.new do |s|
   s.license       = "MIT"
 
   s.files         = `git ls-files -z`.split("\x0")
-  s.test_files = Dir["spec/**/*"]
+  s.test_files    = Dir["spec/**/*"]
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.test_files    = s.files.grep(%r{^(test|s|features)/})
   s.require_paths = ["lib"]
 
-  s.add_development_dependency 'bundler', '~> 1.11'
-  s.add_development_dependency 'capybara', '~> 2.7', '>= 2.7.0'
-  s.add_development_dependency 'rake', '~> 10.0'
-  s.add_development_dependency 'rails', ['>= 4.0', '< 5']
-  s.add_development_dependency 'rspec-rails', '~> 3.0'
+  s.add_development_dependency 'bundler', '~> 2.1'
+  s.add_development_dependency 'capybara', '~> 3.0', '>= 3.0.0'
+  s.add_development_dependency 'rake', '>= 12.3.3'
+  s.add_development_dependency 'rails', ['>= 6.0', '< 7']
+  s.add_development_dependency 'rspec-rails', '~> 4.0'
   s.add_development_dependency 'selenium-webdriver', '~> 2.53', '>= 2.53.4'
 end
