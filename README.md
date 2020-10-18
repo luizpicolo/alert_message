@@ -3,14 +3,13 @@
 [![Gem Version](https://badge.fury.io/rb/alert_message.svg)](http://badge.fury.io/rb/alert_message)
 [![Build Status](https://travis-ci.org/luizpicolo/alert_message.svg?branch=master)](https://travis-ci.org/luizpicolo/alert_message)
 
-This is a simple gem for [alerts messages](http://rubygems.org/gems/alert_message). Work rails > 4
+This is a simple gem for [alerts messages](http://rubygems.org/gems/alert_message). 
 
 ## Installation
 
 Add to your Gemfile:
 
 ```ruby
-gem 'jquery-rails' # Need for rails > 5
 gem 'alert_message'
 ```
 
@@ -27,12 +26,29 @@ Add styles in app/assets/application.css
 ```ruby
 *= require alert_message
 ```
-
+** For less than Rails 6 **
 Add scripts in app/assets/application.js
 
 ```ruby
-//= require jquery
 //= require alert_message
+```
+
+For greater than Rails 6 add in `app\javascript\packs\application.js`
+
+```javascript
+document.addEventListener('DOMContentLoaded', () => {
+  let alertMessage = document.getElementById('alert');
+  
+  alertMessage.classList.add('alert-message--visible');
+  
+  setTimeout((() => {
+    alertMessage.classList.remove('alert-message--visible');
+  }), 10000);
+  
+  alertMessage.addEventListener('click', () => {
+    alertMessage.classList.remove('alert-message--visible');
+  });
+});
 ```
 
 ## How to use
@@ -61,40 +77,9 @@ class HomeController < ApplicationController
 end
 ```
 
-## Custom message to Devise
-
-Some devise screens do not accept Flash Messages. For this we will use a custom helper.
-
-Add in your app/views/layouts/_alerts.html.erb
-
-    <%= show_messages %>
-
-Create helper alert_message_helper.rb
-
-```ruby
-module AlertMessageHelper
-  def show_messages
-    return "" if resource.errors.empty?
-    messages = resource.errors.full_messages
-      html = <<-HTML
-        <div class="alert alert-danger">
-          #{messages.first}
-        </div>
-      HTML
-      html.html_safe
-  end
-end
-```    
-
-## Demo
-
-[alert-message.herokuapp.com](https://alert-message.herokuapp.com/)
-
 # Run testes
 
-```
-bundle exec rake
-```
+in progress
 
 ## Contributing
 
