@@ -1,8 +1,0 @@
-source 'https://rubygems.org'
-
-group :development, :test do
-  gem 'coffee-rails'
-  gem 'rails', '4.2.7.1'
-  gem 'rspec-rails'
-  gem 'alert_message', path: '../../'
-end
