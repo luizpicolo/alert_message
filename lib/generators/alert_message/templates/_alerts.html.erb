@@ -4,7 +4,7 @@
 			key = 'error'
 		end
 	%>
-    <div class="alert-message alert-message-<%= key %>">
+    <div role="alert" class="alert-message alert-message-<%= key %>">
       <%= value.html_safe %>
     </div>
 <% end %>
